@@ -13,6 +13,5 @@ export const RoundButton = styled(Button)`
   background-color: ${({ theme, variant }) => themes[theme][variant].backgroundColor} !important;
   color: ${({ theme, variant }) => themes[theme][variant].color} !important;
   &:hover {
-    filter: brightness(85%);
   }
 `;

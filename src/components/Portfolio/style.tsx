@@ -25,7 +25,7 @@ export const PortfolioCaption = styled.div`
   transition: opacity 0.25s ease;
   text-align: center;
   &:hover {
-    opacity: 0.9;
+    opacity: 0.8;
   }
 `;
 

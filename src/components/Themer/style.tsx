@@ -11,7 +11,7 @@ export const Themer = styled.div`
   flex-direction: row;
   -webkit-box-align: center;
   -webkit-box-pack: center;
-  top: 6rem;
+  top: 4.625rem;
   right: 0;
   border: 0;
   padding: 0.5rem;

@@ -1,14 +1,18 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { connect } from 'react-redux';
 
-import { themes } from '../../utils/themes';
+import { ThemeName } from '../../utils/themes';
 import Divider from '../ShareStyles/Divider';
 import RoundButton from '../ShareStyles/RoundButton';
 import * as Styled from './style';
 
-function About({ theme }) {
+type AboutProps = {
+  theme: string;
+};
+
+const About: FunctionComponent<AboutProps> = ({ theme }) => {
   return (
     <Styled.Section theme={theme} variant="primary" id="about">
       <Container>
@@ -29,14 +33,14 @@ function About({ theme }) {
       </Container>
     </Styled.Section>
   );
-}
+};
 
 About.propTypes = {
-  theme: PropTypes.oneOf(Object.keys(themes)),
+  theme: PropTypes.string,
 };
 
 About.defaultProps = {
-  theme: 'metal',
+  theme: ThemeName.METAL,
 };
 
 const mapStateToProps = (state) => ({
