@@ -1,0 +1,10 @@
+{
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "import/prefer-default-export": "off"
+  }
+}
